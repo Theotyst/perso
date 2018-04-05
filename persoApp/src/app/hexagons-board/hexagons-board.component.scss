@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  position: relative;
+  width: 2000px;
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.hexagon {
+  display: block;
+  position: absolute;
+}
+
+@mixin hexagon-size-x {
+  @for $i from 1 to 100 {
+    .hexagon-size-#{$i} {
+      width: $i/2 * 1%;
+      padding-bottom: 1.732* $i/2 *1%;
+      @extend .hexagon;
+      
+    }
+  }
+}
+
+@mixin position-x {
+  @for $i from 0 to 100 {
+    .left-#{$i} {
+      left: $i*1%;
+    }
+    .top-#{$i} {
+      top: $i*1%;
+    }
+  }
+}
+
+@include hexagon-size-x;
+@include position-x;
