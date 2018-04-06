@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HexagonComponent } from './hexagon/hexagon.component';
 import { HexagonsBoardComponent } from './hexagons-board/hexagons-board.component';
 
+import { HexagonService } from './hexagon/hexagon.service'; 
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HexagonsBoardComponent } from './hexagons-board/hexagons-board.componen
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    HexagonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

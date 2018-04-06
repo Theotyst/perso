@@ -1,2 +1,4 @@
 <app-hexagon *ngFor="let hex of hexagonsData" 
-              [ngClass]="hex.CSSClasses" [textContent]="hex.textContent"></app-hexagon>
+              [size]="hex.size" 
+              [textContent]="hex.textContent"
+              [position]="hex.position"></app-hexagon>

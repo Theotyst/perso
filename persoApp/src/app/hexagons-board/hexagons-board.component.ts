@@ -15,10 +15,7 @@ export class HexagonsBoardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.hexagonsData = [];
-    hexagonsBoardConstants.hexagons.forEach((hexagon) => {
-      this.hexagonsData.push(new HexagonData(hexagon.textContent, hexagon.size, hexagon.position));
-    });
+    this.hexagonsData = hexagonsBoardConstants.hexagons;
   }
 
 }
