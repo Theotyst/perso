@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Position } from "../classes/position";
+import { Position } from "app/classes/position";
 
 @Injectable()
 export class HexagonService {
@@ -14,6 +14,10 @@ export class HexagonService {
   public setPosition(element: any, position: Position) {
     element.style.left = position.x + "%";
     element.style.top = position.y + "%"; 
+  }
+
+  public setBackground(element: any, background: string, overrideDefaultPosition?: boolean) {
+    element.style.background = background + (overrideDefaultPosition ? "" : " center center / 200% no-repeat");
   }
 
 }

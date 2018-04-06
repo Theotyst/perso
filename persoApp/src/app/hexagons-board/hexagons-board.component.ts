@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HexagonData } from './hexagonData';
-import { hexagonsBoardConstants } from './hexagonsBoard.constant'
+import { HexagonData } from 'app/hexagons-board/hexagonData';
+import { hexagonsBoardConstants } from 'app/hexagons-board/hexagons-board.constant'
 
 
 @Component({

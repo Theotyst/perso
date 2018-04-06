@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-import { AppComponent } from './app.component';
-import { HexagonComponent } from './hexagon/hexagon.component';
-import { HexagonsBoardComponent } from './hexagons-board/hexagons-board.component';
+import { AppComponent } from 'app/app.component';
+import { HexagonComponent } from 'app/hexagon/hexagon.component';
+import { HexagonsBoardComponent } from 'app/hexagons-board/hexagons-board.component';
 
-import { HexagonService } from './hexagon/hexagon.service'; 
+import { HexagonService } from 'app/hexagon/hexagon.service'; 
 
 
 @NgModule({

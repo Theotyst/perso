@@ -1,6 +1,6 @@
 import { Component, Input, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
-import { Position } from '../classes/position';
-import { HexagonService } from './hexagon.service'; 
+import { Position } from 'app/classes/position';
+import { HexagonService } from 'app/hexagon/hexagon.service'; 
 
 @Component({
   selector: 'app-hexagon',
@@ -12,6 +12,7 @@ export class HexagonComponent implements AfterViewInit {
   @Input() public textContent: string;
   @Input() public size: number;
   @Input() public position: Position;
+  @Input() public background: string;
 
   @ViewChild('hexagon') hexagonElement: ElementRef;
 
@@ -20,6 +21,7 @@ export class HexagonComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.hexagonService.setSize(this.hexagonElement.nativeElement, this.size);
     this.hexagonService.setPosition(this.hexagonElement.nativeElement, this.position);
+    this.hexagonService.setBackground(this.hexagonElement.nativeElement, this.background);
   }
 
 }

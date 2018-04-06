@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HexagonComponent } from './hexagon.component';
+import { HexagonComponent } from 'app/hexagon.component';
 
 describe('HexagonComponent', () => {
   let component: HexagonComponent;

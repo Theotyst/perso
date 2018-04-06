@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HexagonsBoardComponent } from './hexagons-board.component';
+import { HexagonsBoardComponent } from 'app/hexagons-board.component';
 
 describe('HexagonsBoardComponent', () => {
   let component: HexagonsBoardComponent;
