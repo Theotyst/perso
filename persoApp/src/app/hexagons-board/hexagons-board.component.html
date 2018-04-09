@@ -1,6 +1,7 @@
 <app-hexagon *ngFor="let hex of hexagonsData" 
               [size]="hex.size" 
               [position]="hex.position"
-              [background]="hex.background">
-  <div ng-bind-html-unsafe="hex.content"></div>
+              [background]="hex.background"
+              [zIndex]="hex.zIndex">
+    <div [innerHtml]="hex.content"></div>
 </app-hexagon>

@@ -4,55 +4,61 @@ export const hexagonsBoardConstants = {
       content: '<span style="color: blue">Test text content</span>',
       size: 28,
       position: {
-        x: 14,
-        y: 10
+        x: 25,
+        y: 14
       },
-      background: 'grey'
+      background: 'grey',
+      zIndex: 10
     },
     {
       content: 'Blob',
       size: 8,
       position: {
-        x: 35,
-        y: 20
+        x: 46.3,
+        y: 24
       },
-      background: 'grey url("assets/img/koala.jpg")'
+      background: 'grey url("assets/img/koala.jpg")',
+      zIndex: 20
     },
     {
       content: 'Blob',
       size: 12,
       position: {
-        x: 34,
-        y: 45
+        x: 46.3,
+        y: 38.6
       },
-      background: 'grey'
+      background: 'grey',
+      zIndex: 30
     },
     {
       content: 'Blob',
       size: 22,
       position: {
-        x: 50,
-        y: 10
+        x: 56
+        y: 4.4
       },
-      background: 'white url("assets/img/koala.jpg")'
+      background: 'white url("assets/img/koala.jpg")',
+      zIndex: 40
     },
     {
       content: 'Test text content 2',
       size: 20,
       position: {
-        x: 50,
-        y: 65
+        x: 55.6,
+        y: 49.4
       },
-      background: 'grey url("assets/img/koala.jpg")'
+      background: 'grey url("assets/img/koala.jpg")',
+      zIndex: 50
     },
     {
       content: 'Blob',
       size: 10,
       position: {
-        x: 60,
-        y: 80
+        x: 68.3,
+        y: 76
       },
-      background: 'grey'
+      background: 'grey',
+      zIndex: 60
     }
   ]
 }

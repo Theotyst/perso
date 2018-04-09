@@ -13,6 +13,7 @@ export class HexagonComponent implements AfterViewInit {
   @Input() public size: number;
   @Input() public position: Position;
   @Input() public background: string;
+  @Input() public zIndex: number;
 
   @ViewChild('hexagon') hexagonElement: ElementRef;
 
@@ -22,6 +23,7 @@ export class HexagonComponent implements AfterViewInit {
     this.hexagonService.setSize(this.hexagonElement.nativeElement, this.size);
     this.hexagonService.setPosition(this.hexagonElement.nativeElement, this.position);
     this.hexagonService.setBackground(this.hexagonElement.nativeElement, this.background);
+    this.hexagonService.setZIndex(this.hexagonElement.nativeElement, this.zIndex);
   }
 
 }

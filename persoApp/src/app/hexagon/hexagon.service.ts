@@ -20,4 +20,8 @@ export class HexagonService {
     element.style.background = background + (overrideDefaultPosition ? "" : " center center / 200% no-repeat");
   }
 
+  public setZIndex(element: any, zIndex: number) {
+    element.style.zIndex = zIndex;
+  }
+
 }

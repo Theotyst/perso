@@ -4,4 +4,5 @@ export class HexagonData {
   size: number;
   position: Position;
   background: string;
+  zIndex: number;
 }
